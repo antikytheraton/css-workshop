@@ -1,0 +1,87 @@
+/* =============================================================================
+ * Element selectors
+ * ========================================================================== */
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* Multiple elements can be listed */
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+/* =============================================================================
+ * Class selectors
+ * ========================================================================== */
+
+.first-paragraph {
+  font-size: 1.2em;
+}
+
+.paragraph-title {
+  font-weight: 700;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Multiple classes can be listed together */
+.highlight.underline {
+  color: red;
+}
+
+/* =============================================================================
+ * ID selectors
+ * ========================================================================== */
+
+#navigation {
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+/* =============================================================================
+ * Attribute selectors
+ * ========================================================================== */
+
+/* Any element with href attribute which equals "./subpage-2" */
+[href="./subpage-2"] {
+  font-weight: 700;
+}
+
+/* Any element with href attribute which contains "subpage" */
+[href*="subpage"] {
+  color: green;
+}
+
+/* Usually are listed along element selectors, like <p> here */
+/* <p> that has class attribute (with any value) */
+p[class] {
+  background-color: orange;
+}
+
+/* =============================================================================
+ * Universal selector
+ * ========================================================================== */
+
+/* Commented out because it makes the page looks ugly */
+/*
+* {
+  border: 1px solid black;
+}
+*/

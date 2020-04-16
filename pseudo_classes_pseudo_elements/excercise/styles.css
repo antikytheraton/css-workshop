@@ -1,0 +1,46 @@
+/* You should write the following selectors to select exactly the
+ * elements that are asked to be selected. You should only
+ * write the selector itself; it's declarations are already
+ * written. The declaration declares some attributes that will
+ * help you see if the selector you've written selects the
+ * correct elements (e.g. change the color of those elements).
+ *
+ * You cannot modify any HTML. Rather than that use the power of
+ * CSS selectors to select whatever needed from the exisiting
+ * HTML structure. You will still need to read HTML code and
+ * analyze it's structure to know what selector to write. */
+
+/* 1. Select creature links, but only when they are hovered. */
+.creatures.a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* 2. Select pseudo element before every animal link. */
+a.animal::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(http://getdrawings.com/img/african-animal-silhouette-6.png);
+  background-size: 1em;
+  background-position: center;
+}
+
+/* 3. Select pseudo element before the devil link. */
+a[href*="devil"]::before {
+  content: "";
+  position: relative;
+  top: 0.15em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(https://www.pinclipart.com/picdir/middle/103-1037925_head-with-horns-png-devil-icon-clipart.png);
+  background-size: 1em;
+  background-position: center;
+}
+
+/* 4. Select every animal link other than giraffe. */
+.animal:not(#giraffe) {
+  color: green;
+}

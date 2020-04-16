@@ -1,0 +1,40 @@
+/* You should write the following selectors to select exactly the
+ * elements that are asked to be selected. You should only
+ * write the selector itself; it's declarations are already
+ * written. The declaration declares some attributes that will
+ * help you see if the selector you've written selects the
+ * correct elements (e.g. change the color of those elements).
+ *
+ * You cannot modify any HTML. Rather than that use the power of
+ * CSS selectors to select whatever needed from the exisiting
+ * HTML structure. You will still need to read HTML code and
+ * analyze it's structure to know what selector to write. */
+
+/* 1. Select all links that name animals that walk on 4 legs */
+.animal.walks-on-4-legs {
+  color: red;
+}
+
+/* 2. Select all links that name creatures */
+.creatures a {
+  color: green;
+}
+
+/* 3. Select all other links but not the first one */
+a.other + a.other {
+  display: block;
+  color: black;
+}
+
+/* 4. Select second heading (Other links) */
+/* Write your selector here */
+ {
+  color: brown;
+  font-style: italic;
+}
+
+/* 5. Select all headings (both of 1st and 2nd level) */
+h2 ~ h2 {
+  text-decoration: underline;
+  background-color: yellow;
+}

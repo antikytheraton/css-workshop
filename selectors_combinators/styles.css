@@ -1,0 +1,56 @@
+/* =============================================================================
+ * Child combinator
+ * ========================================================================== */
+
+/* Selects <h2>, which is a child of <header> */
+header > h2 {
+  color: red;
+}
+
+/* Selects <h2>, which is a child of <footer>, which is a child of <body> */
+body > footer > h2 {
+  color: green;
+}
+
+/* =============================================================================
+   * Descendant combinator
+   * ========================================================================== */
+
+/* Selects <a>, which is a descendant of <footer> */
+footer a {
+  color: grey;
+}
+
+/* Selects <li>, which is a descendant of <header>, which is a descendant
+   * of <body>, which is a descendant of <html> */
+html body header li {
+  background-color: #f0f0f0;
+}
+
+/* =============================================================================
+   * Adjacent sibling combinator
+   * ========================================================================== */
+
+/* Selects <p>, which is directly preceeded by <p> */
+p + p {
+  margin-top: 1.5rem;
+}
+
+/* Selects <h2>, which is directly preceeded by <h1> */
+h1 + h2 {
+  margin-top: 2rem;
+}
+
+/* =============================================================================
+   * General sibling combinator
+   * ========================================================================== */
+
+/* Selects <ul>, which is preceeded (doesn't have to be directly) by <h2> */
+h2 ~ ul {
+  list-style: none;
+}
+
+/* Selects <span>, which is preceeded (doesn't have to be directly) by <span> */
+span ~ span {
+  background-color: red;
+}

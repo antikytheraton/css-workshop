@@ -1,0 +1,34 @@
+/* You should write the following selectors to select exactly the
+ * elements that are asked to be selected. You should only
+ * write the selector itself; it's declarations are already
+ * written. The declaration declares some attributes that will
+ * help you see if the selector you've written selects the
+ * correct elements (e.g. change the color of those elements).
+ *
+ * You cannot modify any HTML. Rather than that use the power of
+ * CSS selectors to select whatever needed from the exisiting
+ * HTML structure. You will still need to read HTML code and
+ * analyze it's structure to know what selector to write. */
+
+/* 1. Select only the giraffe link (anchor <a>) */
+#giraffe {
+  background-color: yellow;
+}
+
+/* 2. Select only non-animal links (other links at the bottom) */
+.other {
+  display: block;
+  font-weight: bold;
+}
+
+/* 3. Select level 2 headings (<h2>) */
+h2 {
+  color: red;
+}
+
+/* 4. Select only the turtle link */
+a[href="http://turtle.com"]
+{
+  font-style: italic;
+  color: green;
+}

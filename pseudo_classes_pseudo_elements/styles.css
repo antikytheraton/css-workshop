@@ -1,0 +1,135 @@
+/* =============================================================================
+ * Structural pseudo classes
+ * ========================================================================== */
+
+/* Select root element: <html> for web pages */
+:root {
+  background-color: grey;
+}
+
+/* Select <h2>, which is a first child of it's parent */
+h2:first-child {
+  color: orange;
+}
+
+/* Select <p>, which is the last child of it's parent */
+p:last-child {
+  text-decoration: underline;
+}
+
+/* Select <span>, which is the only child of it's parent */
+span:only-child {
+  color: red;
+}
+
+/* Select <li>, which is the 2nd child of it's parent */
+li:nth-child(2) {
+  background-color: yellow;
+}
+
+/* Can be also written without element selectors, e.g. ":first-child {...}" */
+
+/* =============================================================================
+   * Dynamic pseudo classes
+   * ========================================================================== */
+
+/* Select an unvisited link */
+:link {
+  color: violet;
+}
+
+/* Select a visited link */
+:visited {
+  color: brown;
+}
+
+/* Select <a>, when it's focused */
+a:focus {
+  color: white;
+  background-color: green;
+}
+
+/* Select <a>, when it's hovered */
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Select <a>, which it's active (being clicked) */
+a:active {
+  color: white;
+  background-color: red;
+}
+
+/* =============================================================================
+   * UI state pseudo classes
+   * ========================================================================== */
+
+/* For some UI controls (e.g. <input>, <select>):
+     - :enabled, :disabled
+     - :checked
+     - :required, :optional
+     - :valid, :invalid
+     - :in-range, :out-of-range
+     - :target
+  
+  
+  /* =============================================================================
+   * "Not" pseudo classe
+   * ========================================================================== */
+
+/* Commented out, because it makes page even more ugly */
+/* Select any element that's not <p> */
+/*
+  :not(p) {
+    border: 1px solid black;
+  }
+  */
+
+/* Can be also used with other selectors and combinators */
+/* Select any element that's not <h1>, which is a descendant of <header> */
+header :not(h1) {
+  font-style: italic;
+}
+
+/* =============================================================================
+   * Pseudo elements
+   * ========================================================================== */
+
+/* Select pseudo element right before any <h1> element */
+h1::before {
+  content: "(Level 1) ";
+}
+
+/* Select pseudo element right before any <h2> element */
+h2:before {
+  content: "(Level 2) ";
+}
+
+/* Only to reset list markers */
+ul {
+  list-style: none;
+}
+
+/* Select pseudo element right before any <li> element */
+li::before {
+  content: "\2714"; /* Checkmark character */
+  margin-right: 1ex;
+}
+
+/* Select pseudo element right after any <a> element */
+a::after {
+  content: " (click to open)";
+  font-size: 0.75em;
+}
+
+/* Select first line of any <p> element */
+p::first-line {
+  color: white;
+  background-color: blue;
+}
+
+/* Select first letter of any <p> element */
+p::first-letter {
+  font-size: 2.5em;
+}
