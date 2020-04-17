@@ -126,3 +126,5 @@ Demo: https://codepen.io/no-cheating/pen/eYNwbWj?editors=1100
 ### References
 
 [HTML Semantics article](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+
+[Sibling Selectors](https://css-tricks.com/child-and-sibling-selectors/)
