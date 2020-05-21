@@ -1,0 +1,57 @@
+/* =============================================================================
+ * Set display to inline
+ * ========================================================================== */
+
+div {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  background-color: orange;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.inline {
+  display: inline;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+.inline + .inline {
+  margin-left: 1rem;
+}
+
+/* =============================================================================
+   * Set display to block
+   * ========================================================================== */
+
+span {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  background-color: green;
+  padding: 1rem;
+}
+
+div + span {
+  margin-top: 2rem;
+}
+
+.block {
+  display: block;
+}
+
+.block + .block {
+  margin-top: 1rem;
+}
+
+/* =============================================================================
+   * Set display to none
+   * ========================================================================== */
+
+.none {
+  display: none;
+}

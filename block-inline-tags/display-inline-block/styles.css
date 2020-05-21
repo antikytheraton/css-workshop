@@ -1,0 +1,29 @@
+div {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  padding: 1rem;
+  background-color: orange;
+}
+
+div + div {
+  margin-top: 1rem;
+}
+
+span {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  background-color: green;
+  vertical-align: middle;
+
+  /* Those attributes are not respected on inline elements */
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.inline-block {
+  display: inline-block;
+}
