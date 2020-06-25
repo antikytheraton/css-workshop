@@ -1,0 +1,37 @@
+.parent {
+  display: flex;
+
+  /* Not important */
+  border: 5px solid red;
+}
+
+.parent--vertical {
+  flex-direction: row;
+}
+
+.parent--vertical-reverse {
+  flex-direction: row-reverse;
+}
+
+.parent--horizontal {
+  flex-direction: column;
+}
+
+.parent--horizontal-reverse {
+  flex-direction: column-reverse;
+}
+
+.child {
+  /* Not important */
+  border: 3px solid black;
+  width: 50px;
+  line-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}

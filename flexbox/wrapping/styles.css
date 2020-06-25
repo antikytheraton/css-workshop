@@ -1,0 +1,31 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+
+  /* Not important */
+  border: 5px solid red;
+}
+
+.parent--wrap {
+  flex-wrap: wrap;
+}
+
+.parent--nowrap {
+  flex-wrap: nowrap;
+}
+
+.child {
+  /* Not important */
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 50%;
+  line-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}

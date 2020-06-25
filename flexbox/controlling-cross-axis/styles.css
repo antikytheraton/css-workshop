@@ -1,0 +1,49 @@
+.parent {
+  display: flex;
+  /* TODO: Change directions to row-reverse and column */
+  flex-direction: row;
+
+  /* Not important */
+  border: 5px solid red;
+  height: 120px;
+}
+
+.parent--stretch {
+  align-items: stretch;
+}
+
+.parent--flex-start {
+  align-items: flex-start;
+}
+
+.parent--flex-end {
+  align-items: flex-end;
+}
+
+.parent--center {
+  align-items: center;
+}
+
+.parent--baseline {
+  align-items: baseline;
+}
+
+.child {
+  /* Not important */
+  border: 3px solid black;
+  width: 50px;
+  line-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.child--taller {
+  /* Not important */
+  line-height: 80px;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}

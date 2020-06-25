@@ -1,0 +1,56 @@
+.parent {
+  display: flex;
+  /* TODO: Change directions to row-reverse and column */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* Not important */
+  border: 5px solid red;
+  height: 250px;
+}
+
+.parent--stretch {
+  align-content: stretch;
+}
+
+.parent--flex-start {
+  align-content: flex-start;
+}
+
+.parent--flex-end {
+  align-content: flex-end;
+}
+
+.parent--center {
+  align-content: center;
+}
+
+.parent--space-around {
+  align-content: space-around;
+}
+
+.parent--space-between {
+  align-content: space-between;
+}
+
+.parent--space-evenly {
+  align-content: space-evenly;
+}
+
+.child {
+  /* Not important */
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 50%;
+  line-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}

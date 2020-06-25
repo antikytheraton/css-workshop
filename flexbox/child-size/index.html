@@ -1,0 +1,67 @@
+<h1>Controlling size: flex-basis, flex-grow, flex-shrink</h1>
+
+<section>
+  <h2>flex-basis</h2>
+  <ul class="parent">
+    <li class="child">1</li>
+    <li class="child child--basis-150">2</li>
+    <li class="child">3</li>
+    <li class="child">4</li>
+    <li class="child child--basis-20">5</li>
+  </ul>
+</section>
+
+<section>
+  <h2>flex-grow</h2>
+  <ul class="parent">
+    <li class="child">1</li>
+    <li class="child child--grow-2">2</li>
+    <li class="child">3</li>
+    <li class="child">4</li>
+    <li class="child child--grow-4">5</li>
+  </ul>
+</section>
+
+<section>
+  <h2>flex-shrink</h2>
+  <ul class="parent parent--narrow">
+    <li class="child child--shrink-2">1</li>
+    <li class="child child--shrink-0">2</li>
+    <li class="child child--shrink-1">3</li>
+    <li class="child child--shrink-2">4</li>
+    <li class="child child--shrink-0">5</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Combining all A</h2>
+  <ul class="parent">
+    <li class="child child--basis-300 child--grow-1">1</li>
+    <li class="child child--basis-300 child--grow-1">2</li>
+    <li class="child child--basis-300 child--grow-1">3</li>
+    <li class="child child--basis-300 child--grow-1">4</li>
+    <li class="child child--basis-300 child--grow-1">5</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Combining all B</h2>
+  <ul class="parent">
+    <li class="child child--basis-300 child--grow-2">1</li>
+    <li class="child child--basis-300 child--grow-0">2</li>
+    <li class="child child--basis-300 child--grow-1">3</li>
+    <li class="child child--basis-300 child--grow-2">4</li>
+    <li class="child child--basis-300 child--grow-0">5</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Combining all C</h2>
+  <ul class="parent">
+    <li class="child child--basis-500 child--shrink-3">1</li>
+    <li class="child child--basis-500 child--shrink-0">2</li>
+    <li class="child child--basis-500 child--shrink-2">3</li>
+    <li class="child child--basis-500 child--shrink-3">4</li>
+    <li class="child child--basis-500 child--shrink-2">5</li>
+  </ul>
+</section>

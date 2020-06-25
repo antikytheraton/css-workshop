@@ -1,0 +1,47 @@
+.parent {
+  display: flex;
+  /* TODO: Change directions to row-reverse and column */
+  flex-direction: row;
+
+  /* Not important */
+  border: 5px solid red;
+}
+
+.parent--flex-start {
+  justify-content: flex-start;
+}
+
+.parent--flex-end {
+  justify-content: flex-end;
+}
+
+.parent--center {
+  justify-content: center;
+}
+
+.parent--space-around {
+  justify-content: space-around;
+}
+
+.parent--space-between {
+  justify-content: space-between;
+}
+
+.parent--space-evenly {
+  justify-content: space-evenly;
+}
+
+.child {
+  /* Not important */
+  border: 3px solid black;
+  width: 50px;
+  line-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,59 @@
+.parent {
+  /* Not important */
+  border: 5px solid red;
+  height: 100px;
+  padding: 25px;
+}
+
+.parent--flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent--text-no-flexbox {
+  text-align: center;
+  line-height: 100px;
+
+  /* Not important */
+  margin-top: 25px;
+}
+
+.parent--child-no-flexbox {
+  text-align: center;
+
+  /* Not important */
+  margin-top: 25px;
+}
+
+.parent--child-no-flexbox::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.child {
+  /* Not important */
+  vertical-align: middle;
+  display: inline-block;
+  border: 3px solid black;
+  padding: 15px;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.child--sized {
+  width: 50px;
+  line-height: 50px;
+}
+
+.child--floated {
+  margin-left: auto;
+}
+
+/* Not important */
+ul {
+  list-style: none;
+  padding: 0;
+}
